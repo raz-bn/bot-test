@@ -1,5 +1,6 @@
 provider "azurerm" {
   features {}
+  subscription_id = "af209cc5-f115-4194-8a2e-f83856da968a"
 }
 
 terraform {
@@ -12,9 +13,9 @@ terraform {
   }
 
   backend "azurerm" {
-    subscription_id      = "29f045e3-3e99-4b8b-8e2c-d2aee6863859"
-    resource_group_name  = "cp-hub-tfstate-rg"
-    storage_account_name = "cphubterraformstatesa"
+    subscription_id      = "5945e69f-65ac-4876-bbf4-4a0fa9753c05"
+    resource_group_name  = "dana"
+    storage_account_name = "hackaton870"
     container_name       = "tfstate"
     key                  = "zurimoni.tfstate"
   }
