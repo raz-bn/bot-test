@@ -12,11 +12,11 @@ terraform {
     }
   }
 
-  backend "azurerm" {
-    subscription_id      = "5945e69f-65ac-4876-bbf4-4a0fa9753c05"
-    resource_group_name  = "dana"
-    storage_account_name = "hackaton870"
-    container_name       = "tfstate"
-    key                  = "zurimoni.tfstate"
-  }
+#   backend "azurerm" {
+#     subscription_id      = "5945e69f-65ac-4876-bbf4-4a0fa9753c05"
+#     resource_group_name  = "dana"
+#     storage_account_name = "hackaton870"
+#     container_name       = "tfstate"
+#     key                  = "zurimoni.tfstate"
+#   }
 }
