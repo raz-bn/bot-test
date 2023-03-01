@@ -3,7 +3,7 @@ locals {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "hackaton-rg"
+  name     = "zurimoni-rg"
   location = local.location
 }
 
@@ -27,4 +27,11 @@ resource "azurerm_resource_group" "workstations" {
 
 }
 
-
+################################## Windows Workstations ##################################
+locals {
+  windows_vm_type          = "user"
+  windows_vm_resource_name = "hackaton-windows-workstation"
+  windows_vm_computer_name = "Workstation"
+  windows_admin_username   = "hackaton"
+  windows_instances_count  = 1
+}
